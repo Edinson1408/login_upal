@@ -1,0 +1,356 @@
+/*!
+ * Bounce Template v2.1
+ *
+ * Built with Bootstrap v2.2.2
+ * http://twitter.github.com/bootstrap
+ */
+
+/* General
+-------------------------------------------------- */
+body {
+    background: url("../img/backgrounds/1.jpg") repeat scroll 0 0 #FFFFFF;
+	position: relative;
+    padding-top: 40px;
+    font-family: "Helvetica Neue","Helvetica",Arial,Verdana,sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+button,
+a {
+    font-family: "Open Sans","Helvetica Neue","Helvetica",Arial,Verdana,sans-serif;
+    font-weight: 300;
+}
+.map {
+    height: 350px;
+    width: 100%;
+}
+ 
+/* Content Dividers
+-------------------------------------------------- */
+hr.dashed {
+    border-style: dashed none;
+}
+hr.halfed {
+    margin: 10px 0;
+}
+hr.thick {
+    border-width: 4px 0;
+}
+
+/* Glyphicons Fix
+-------------------------------------------------- */
+[class^="glyphicons-"]:before {
+    font-style: normal;
+    line-height: inherit;
+    vertical-align: bottom;
+}
+
+/* Keyframe Animations
+-------------------------------------------------- */
+@-webkit-keyframes rise {
+	from {-webkit-transform: translateY(0);}
+	to {-webkit-transform: translateY(-5px);}
+}
+@-moz-keyframes rise {
+	from {-moz-transform: translateY(0);}
+	to {-moz-transform: translateY(-5px);}
+}
+@-o-keyframes rise {
+	from {-o-transform: translateY(0);}
+	to {-o-transform: translateY(-5px);}
+}
+@keyframes rise {
+	from {transform: translateY(0);}
+	to {transform: translateY(-5px);}
+}
+@-webkit-keyframes slide {
+	from {-webkit-transform: translateX(0);}
+	to {-webkit-transform: translateX(5px);}
+}
+@-moz-keyframes slide {
+	from {-moz-transform: translateX(0);}
+	to {-moz-transform: translateX(5px);}
+}
+@-o-keyframes slide {
+	from {-o-transform: translateX(0);}
+	to {-o-transform: translateX(5px);}
+}
+@keyframes slide {
+	from {transform: translateX(0);}
+	to {transform: translateX(5px);}
+}
+.animated,
+.animated a {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 0.2s;
+	-moz-animation-duration: 0.2s;
+	-ms-animation-duration: 0.2s;
+	-o-animation-duration: 0.2s;
+	animation-duration: 0.2s;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-ms-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;	
+}
+
+/* Typography
+-------------------------------------------------- */
+.txt-lefty {
+    text-align: left;
+}
+.txt-middle {
+    text-align: center;
+}
+.txt-righty {
+    text-align: right;
+}
+
+/* Buttons
+-------------------------------------------------- */
+.btn-action {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    font-size: 17px;
+    line-height: normal;
+    padding: 10px 30px;
+}
+.btn-flat {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+.btn-pillbox {
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	border-radius: 14px;
+}
+
+/* Navbar
+-------------------------------------------------- */
+.navbar-fixed-top {
+    margin-bottom: 0;
+	background: black; /**** color franja superior *****/
+}
+.navbar-inner {
+	border-bottom: 0 none;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    filter: none;
+    padding: 10px 0;
+	
+}
+.navbar .brand {
+    font-size: 26px;
+	text-shadow: none;
+	color: #FFFFFF; /**** Color de la letra del logo MOPH en franja superior ****/
+}
+.navbar .nav > li > a {
+	font-size: 16px;
+	font-weight: normal;
+    text-shadow: none;
+}
+.navbar .nav > li.active > a,
+.navbar .nav > li.active:hover > a,
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+    padding-bottom: 4px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: transparent; /***** transparent *******/
+    color: #FFFFFF; /*** #FFFFFF **/
+}
+.navbar .nav li.dropdown > .dropdown-toggle .caret {
+    border-bottom-color: #D6DFE5;
+    border-top-color: #D6DFE5;
+}
+.navbar .nav li.dropdown > a:hover .caret,
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.active > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+    border-bottom-color: #FFFFFF;
+    border-top-color: #FFFFFF;
+}
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+    color: #FFFFFF;
+}
+.btn-dropnav {
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 7px 10px;
+	display: none;
+}
+.btn-dropnav .icon-bar {
+    background-color: #FFFFFF; /**** #F5F5F5 ********/
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+	-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);	
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    display: block;
+    height: 2px;
+    width: 18px;
+	
+}
+.btn-dropnav .icon-bar + .icon-bar {
+    margin-top: 3px;
+}
+.nav-tabs .open .dropdown-toggle,
+.nav-pills .open .dropdown-toggle,
+.nav > li.dropdown.open.active > a:hover {
+    border-color: #308CCF;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+    background-color: #308CCF; /**** #308CCF ******/
+    background-image: none;
+} 
+
+/* Login/Register Forms
+-------------------------------------------------- */
+.well-form {
+    max-width: 340px;
+	margin: 0 auto;
+}
+.well-form .form-actions {
+    padding: 19px 0;
+}
+.well-form .form-actions label {
+    display: inline-table;
+    float: left;
+    margin-top: 5px;
+}
+.well-form .form-actions button {
+    float: right;
+}
+.well-form .form-extra {
+    text-align: center;
+}
+.well-form .form-extra button {
+    margin-bottom: 5px;
+}
+
+/* Landing
+-------------------------------------------------- */
+
+-------------------------------------------------- */
+
+/* Main Content
+-------------------------------------------------- */
+
+/* Call to Action Headline
+-------------------------------------------------- */
+
+/* Pricing Tables
+-------------------------------------------------- */
+/* Meet the Team
+-------------------------------------------------- */
+
+/* Blog
+-------------------------------------------------- */
+.entry {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0 0 30px;
+    padding: 10px;	
+}
+
+/* Footer
+-------------------------------------------------- */
+
+/* Copywrite
+-------------------------------------------------- */
+
+/* Mobile Defaults
+------------------------- */
+@media (max-width: 979px) {
+  body {
+    padding-top: 0;
+	overflow-x: hidden;
+  }
+  .navbar .btn-dropnav {
+    display: block;
+	background: #264040; /***** color fondo del icon-bar en mobiles ******/
+  }
+  .navbar .nav-collapse .nav > li > a,
+  .nav-collapse .dropdown-menu a  {
+    display: inline-block;
+  }
+  .nav-collapse .dropdown-menu a {
+    color: green; /**** #D6DFE5 ******/
+    font-weight: normal;
+  }
+  .nav-collapse .nav > li > a:hover,
+  .nav-collapse .dropdown-menu a:hover {
+    background-color: #308CCF; /***  ***/
+  }
+  .dropdown-menu li > a:hover,
+  .dropdown-menu li > a:focus,
+  .dropdown-submenu:hover > a {
+    background-image: none;
+  } 
+  .navbar .nav-collapse.nav .active > a {
+    margin-left: 5px;
+  } 
+  .navbar .nav-collapse .nav > li.active > a,
+  .navbar .nav-collapse .nav > li.active:hover > a,  
+  .navbar .nav-collapse .nav .active > a,
+  .navbar .nav-collapse .nav .active > a:hover,
+  .navbar .nav-collapse .nav .active > a:focus {
+	border-bottom: medium none;
+	padding: 9px 15px;	
+  }
+  .navbar .nav-collapse .nav > li > a:hover {
+	-webkit-animation-name: slide;
+	-moz-animation-name: slide;
+	-o-animation-name: slide;
+	animation-name: slide;	
+  }
+  .navbar .nav li.dropdown.open > .dropdown-toggle,
+  .navbar .nav li.dropdown.active > .dropdown-toggle,
+  .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+	-webkit-animation-name: none;
+	-moz-animation-name: none;
+	-o-animation-name: none;
+	animation-name: none;	
+  }  
+  #landing,
+  #landingSlide,
+  #header,
+  #content {
+    margin-left: -20px;
+    margin-right: -20px;
+	padding: 30px 20px;
+  }
+  .product-plan .feature .pull-right {
+	float: none;
+  }
+  #headline,
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+	padding: 20px;
+  }
+  #copywrite {
+    margin-left: -20px;
+    margin-right: -20px;
+	padding: 0 20px;
+  }   
+}
+

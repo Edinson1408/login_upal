@@ -1,0 +1,168 @@
+#wrapper {
+	margin:0 auto;
+}
+#wp-calendar {
+	line-height: 1; 
+	font-family: sans-serif;
+	border-spacing: 0; 
+	width:100%;
+        
+}
+#wp-calendar {
+	color: #666;
+	font-size: 12px;
+	-webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	   -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+			box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	background: #f5f5f5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#ececec));
+	background: -moz-linear-gradient(top,  #f5f5f5,  #ececec);
+}
+#wp-calendar a {
+	color: red;
+	text-decoration:none;
+}
+#wp-calendar caption {
+	background: #383838;
+	color: #fff;
+	font-size: 14px;
+	font-weight:bold;
+	padding: 15px 0 11px 0;
+	text-align: center;
+	text-shadow: 0 -1px 0 #000;
+	-webkit-box-shadow: inset 0 1px 0 #484848, 0 -1px 5px rgba(0,0,0,0.3);
+	   -moz-box-shadow: inset 0 1px 0 #484848, 0 -1px 5px rgba(0,0,0,0.3);
+			box-shadow: inset 0 1px 0 #484848, 0 -1px 5px rgba(0,0,0,0.3);
+	border: 1px solid #373737;
+	z-index: -99;
+}
+#wp-calendar thead th {
+	font-size: 10px;
+	padding: 8px 0;
+	color: #666;
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	border-bottom: 1px solid #bbbbbb;
+	background: #f7f7f7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#f1f1f1));
+	background: -moz-linear-gradient(top,  #f7f7f7,  #f1f1f1);
+}
+#wp-calendar tbody td {
+	color: #666;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	padding: 12px 8px;
+	text-align: center;
+	font-size:11px;
+	font-weight: bold;
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff;
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#dedede));
+	background: -moz-linear-gradient(top,  #ededed,  #dedede);
+	cursor:pointer;
+	*height:40px;
+}
+#wp-calendar tbody td.no-pointer {
+	cursor:default!important;
+}
+#wp-calendar tbody td.today {
+	background: #f5f5f5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#ececec));
+	background: -moz-linear-gradient(top,  #f5f5f5,  #ececec);
+	cursor:pointer;
+	*height:40px;
+}
+#wp-calendar tbody td.nothing {
+	background: #f5f5f5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#ececec));
+	background: -moz-linear-gradient(top,  #f5f5f5,  #ececec);
+	cursor:default;
+}
+#wp-calendar tfoot{
+	color: #e0e0e0;
+	font-size: 12px;
+	text-align: center;
+}
+#wp-calendar tfoot tr{
+	background: #f5f5f5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#ececec));
+	background: -moz-linear-gradient(top,  #f5f5f5,  #ececec);
+}
+#wp-calendar tfoot td{
+	padding: 10px 10px;
+}
+#wp-calendar tfoot a{
+	color: #666;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+#wp-calendar tfoot td#prev {
+	text-align: left;
+}
+#wp-calendar tfoot td#next {
+	text-align: right;
+}
+#wp-calendar tbody td.disable {
+	color: #fff;
+    border: solid 1px gray;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+	background:#A4A4A4;
+	cursor:default;
+}
+#wp-calendar tbody td.exception {
+	color: #fff;
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff; 
+    background:#D65F5F;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+	cursor:default;
+}
+#wp-calendar tbody td.select {	
+	color:#555;
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff; 
+    background:#FAF09F;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+	cursor:pointer;
+}
+#wp-calendar tbody td.assign {	
+	color:#555;
+	border: 1px solid;
+	border-color: #fff #bbbbbb #bbbbbb #fff; 
+    background:#C0E1EB;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+	cursor:pointer;
+}
+
+.events {
+	position: relative;
+}
+.events ul {
+	text-align: left;
+	position: absolute;
+	/*display: none;*/
+	z-index: 1000;
+	padding: 15px;
+	background: #f5f5f5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#ececec));
+	background: -moz-linear-gradient(top,  #f5f5f5,  #ececec);
+	color: white;
+	border: 1px solid #bbb;
+	font-size: 15px;
+	width: 200px;
+	list-style: none;
+	color: #444444;
+	-webkit-box-shadow: 0px 8px 8px #333;
+}
+.events li {
+	padding-bottom: 5px;
+}
+.events li span {
+	display: block;
+	font-size: 12px;
+	text-align: justify;
+	color: #555;
+}
+.events li span.title {
+	font-weight: normal;
+	color: #222;
+}
